@@ -1,0 +1,7 @@
+{
+  "name": "Learners Lanka",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
