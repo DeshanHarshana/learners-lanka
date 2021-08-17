@@ -1,27 +1,45 @@
-#container {
+ion-content{
+  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0)),
+  url("/assets/home/background.jpg") no-repeat center center / cover;
+}
+
+ion-card{
   text-align: center;
+  height: 30vh;
+  border: 3px solid black;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+h1{
+  font-family:'FM-Samantha';
+  font-size: 3rem;
+  color:black;
+}
+.rowdetails{
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.x{
+  --background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.7)),
+  url("/assets/home/2.jpg") no-repeat center center / cover;
 
-  color: #8c8c8c;
-
-  margin: 0;
+  animation-duration: 500ms;
+  animation-delay: 100ms;
 }
+.y{
+  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.7)),
+  url("/assets/home/1.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 400ms;
+}
+.z{
+  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.7)),
+  url("/assets/home/3.png") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}
+.first{
 
-#container a {
-  text-decoration: none;
 }

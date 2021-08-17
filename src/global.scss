@@ -24,3 +24,43 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import '~animate.css/animate.min.css';
+@font-face {
+  font-family: 'FM-Samantha';
+  src: url('./assets/font/FM-Samantha.TTF');
+}
+@font-face {
+  font-family: 'FM-Basuru';
+  src: url('./assets/font/FM-Basuru.TTF');
+}
+@font-face {
+  font-family: 'FM-Bindumathi';
+  src: url('./assets/font/FM-Bindumathi.TTF');
+}
+.TextSelectable {
+  --background: #edf8dc;
+  --backdrop-opacity:0.8;
+  font-family: 'FM-Basuru';
+  align-items: center;
+
+
+
+  .alert-message {
+    text-align: center;
+    color: black;
+
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .alert-title.sc-ion-alert-md, .alert-title.sc-ion-alert-ios {
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+}
+
+  .alert-button{
+    color: red;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+}

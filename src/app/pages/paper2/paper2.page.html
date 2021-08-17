@@ -1,0 +1,60 @@
+<ion-content>
+  <div class="container">
+    <div class="marks">
+      <h2 class="mark-pannel">ලකුනු : {{ marks }} | ප්‍රශ්න අංකය {{ questionNo+1 }}/20</h2>
+
+
+    </div>
+    <div [ngClass]="question_page">
+      <ion-card>
+      <div class="image">
+              <h5>{{ question_head }}</h5>
+
+      <img [src]="question_image">
+    </div>
+
+      <div class="question-list">
+        <ol>
+          <li>{{ q1 }}</li>
+          <li>{{ q2 }}</li>
+          <li>{{ q3 }}</li>
+          <li>{{ q4 }}</li>
+        </ol>
+      </div>
+      <div class="afterAnswer" [hidden]="!answer_gived" >
+        <ion-row >
+          <div class="desitionRow">
+            <img [src]="anwer_image" [ngClass]="imgClass">
+            <h4 [ngClass]="errorAnswer">{{ message }}</h4>
+          </div>
+
+        </ion-row>
+        <ion-row >
+          <div class="desitionRow">
+            <button class="myButtonNext" (click)="nextQuestion()">ඊලග ප්‍රශ්නය</button>
+          </div>
+
+        </ion-row>
+      </div>
+      <div class="answer" [hidden]="answer_gived">
+        <ion-row class="questionRow">
+          <ion-col>
+<button class="myButton" (click)="answer(1)">1</button>
+          </ion-col>
+          <ion-col>
+            <button class="myButton" (click)="answer(2)">2</button>
+          </ion-col>
+        </ion-row>
+        <ion-row class="questionRow">
+          <ion-col>
+            <button class="myButton" (click)="answer(3)">3</button>
+                      </ion-col>
+                      <ion-col>
+                        <button class="myButton" (click)="answer(4)">4</button>
+                      </ion-col>
+        </ion-row>
+      </div>
+    </ion-card>
+    </div>
+      </div>
+</ion-content>
