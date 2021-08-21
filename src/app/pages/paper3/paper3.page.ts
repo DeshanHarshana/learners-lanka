@@ -8,9 +8,9 @@ import { Sounds } from 'src/app/common/sounds';
   styleUrls: ['./paper3.page.scss'],
 })
 export class Paper3Page implements OnInit {
-  private incorrectAnswer =new Audio(String(Sounds.correctAnswer));
-  private correctAnswer=new Audio(String(Sounds.incorrectAnswer));
-  answerarr=[1,4,1,3,4,4,1,3,2,3,2,4,5,3,2,2,3,2,3,4];
+  private incorrectAnswer =new Audio(String(Sounds.incorrectAnswer));
+  private correctAnswer=new Audio(String(Sounds.correctAnswer));
+  answerarr=[2,4,4,4,2,4,3,4,1,3,4,4,3,4,3,3,2,4,4,2]
   questionNo=0;
   answer_gived:boolean=false;
   anwer_image:string="";
@@ -25,7 +25,7 @@ export class Paper3Page implements OnInit {
   q2:string="";
   q3:string="";
   q4:string="";
-
+  nextQue="ඊලග ප්‍රශ්නය";
   constructor(
     private router:Router
   ) { }
@@ -161,7 +161,7 @@ nextQuestion(){
     this.question_head="මාර්ග සංඥාවෙන් අදහස් කෙරෙන්නේ";
     this.q1="ඉදිරියෙන් ප්‍රදාන මාර්ගයට ඇතුල් වෙන බවයි";
     this.q2="ඉදිරියෙන් එන වාහන වලට ප්‍රමුඛතාවය දිය යුතු බවයි";
-    this.q3="ඉදිරියෙන් යන වාහන වලට ප්‍රමුඛතාවය දිය යුතු බවයි";
+    this.q3="ඉදිරියට යන වාහන වලට ප්‍රමුඛතාවය දිය යුතු බවයි";
     this.q4="ඉදිරියෙන් පැමිනෙන වාහනයෙන් ප්‍රවේසම් වන්න යන අදහසයි";
   }
   else if(this.questionNo==13){
@@ -217,9 +217,10 @@ nextQuestion(){
     this.question_image="assets/paper3/20.JPG";
     this.question_head="මෙම සලකුනෙන් දැක්වෙන්නෙ";
     this.q1="දකුනට හැරවිය යුතුය";
-    this.q2="වමට හැරවිය යුතුය";
+    this.q2="වමට වංගුව ඉදිරියෙනි";
     this.q3="දකුනට වංගුව ඉදිරියෙනි";
     this.q4="වමට හැරවිය යුතුය";
+    this.nextQue="අවසාන කරන්න";
   }
 }
 }

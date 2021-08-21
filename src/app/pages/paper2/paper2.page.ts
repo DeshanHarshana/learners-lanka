@@ -10,7 +10,7 @@ import { Sounds } from 'src/app/common/sounds';
 export class Paper2Page implements OnInit {
   private incorrectAnswer =new Audio(String(Sounds.incorrectAnswer));
   private correctAnswer=new Audio(String(Sounds.correctAnswer));
-  answerarr=[1,4,1,3,4,4,1,3,2,3,2,4,5,3,2,2,3,2,3,4];
+  answerarr=[4,2,4,2,3,3,4,1,3,2,4,3,2,1,4,2,1,4,3,3]
   questionNo=0;
   answer_gived:boolean=false;
   anwer_image:string="";
@@ -25,7 +25,7 @@ export class Paper2Page implements OnInit {
   q2:string="";
   q3:string="";
   q4:string="";
-
+  nextQue="ඊලග ප්‍රශ්නය";
   constructor(
     private router:Router
   ) { }
@@ -255,5 +255,6 @@ else if(this.questionNo==19){
     this.q2="ඇතුල්වීම තහනම් ";
     this.q3="වාහන ඉස්සර කිරීම තහනම් ";
     this.q4="ඉරට්ටේ දිනවල නැවැත්වීම තහනම් ";
+    this.nextQue="අවසාන කරන්න";
   }}
 }

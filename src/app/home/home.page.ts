@@ -14,4 +14,7 @@ export class HomePage {
   goToOne(){
     this.router.navigate(['roadsign']);
   }
+  paperList(){
+    this.router.navigate(['paperlist'])
+  }
 }

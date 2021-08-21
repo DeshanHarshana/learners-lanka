@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'paper2',
+    redirectTo: 'first-page',
     pathMatch: 'full'
   },
   {
@@ -66,6 +66,26 @@ const routes: Routes = [
   {
     path: 'commandsign',
     loadChildren: () => import('./pages/commandsign/commandsign.module').then( m => m.CommandsignPageModule)
+  },
+  {
+    path: 'paper6',
+    loadChildren: () => import('./pages/paper6/paper6.module').then( m => m.Paper6PageModule)
+  },
+  {
+    path: 'paper7',
+    loadChildren: () => import('./pages/paper7/paper7.module').then( m => m.Paper7PageModule)
+  },
+  {
+    path: 'paper8',
+    loadChildren: () => import('./pages/paper8/paper8.module').then( m => m.Paper8PageModule)
+  },
+  {
+    path: 'paper9',
+    loadChildren: () => import('./pages/paper9/paper9.module').then( m => m.Paper9PageModule)
+  },
+  {
+    path: 'paperlist',
+    loadChildren: () => import('./pages/paperlist/paperlist.module').then( m => m.PaperlistPageModule)
   },
 ];
 

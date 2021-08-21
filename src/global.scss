@@ -40,7 +40,7 @@
 .TextSelectable {
   --background: #edf8dc;
   --backdrop-opacity:0.8;
-  font-family: 'FM-Basuru';
+
   align-items: center;
 
 
@@ -49,12 +49,13 @@
     text-align: center;
     color: black;
 
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1rem;
   }
   .alert-title.sc-ion-alert-md, .alert-title.sc-ion-alert-ios {
     font-size: 2.3rem;
     color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
   .alert-button{

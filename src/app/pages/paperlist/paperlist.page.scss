@@ -1,0 +1,42 @@
+ion-content{
+  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0)),
+  url("/assets/home/background.jpg") no-repeat center center / cover;
+}
+
+ion-card{
+  text-align: center;
+  height: 30vh;
+  border: 3px solid black;
+
+
+}
+
+h1{
+  font-family:'FM-Samantha';
+  font-size: 3rem;
+  color:black;
+}
+.rowdetails{
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+
+.x{
+  --background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+
+  animation-duration: 500ms;
+  animation-delay: 100ms;
+}
+.y{
+  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 400ms;
+}
+.z{
+  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}

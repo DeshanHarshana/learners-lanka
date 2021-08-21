@@ -10,7 +10,7 @@ import { Sounds } from 'src/app/common/sounds';
 export class Paper5Page implements OnInit {
   private incorrectAnswer =new Audio(String(Sounds.incorrectAnswer));
   private correctAnswer=new Audio(String(Sounds.correctAnswer));
-  answerarr=[1,4,1,3,4,4,1,3,2,3,2,4,5,3,2,2,3,2,3,4];
+  answerarr=[2,3,4,3,3,3,4,3,1,4,2,3,3,4,2,3,2,1,2,2]
   questionNo=0;
   answer_gived:boolean=false;
   anwer_image:string="";
@@ -26,6 +26,7 @@ export class Paper5Page implements OnInit {
   q3:string="";
   q4:string="";
   imageHidden:boolean=false;
+  nextQue="ඊලග ප්‍රශ්නය";
   constructor(
     private router:Router
   ) { }
@@ -238,6 +239,8 @@ else if(this.questionNo==19){
     this.q2="අඩු ගියරයක පැදවිය යුතුය";
     this.q3="වැඩි ගියරයක පැදවිය යුතුය";
     this.q4="ගියර් නොමැතිව නිව්ටල් තත්ත්වයේ පැදවිය යුතු ය";
+    this.nextQue="අවසාන කරන්න";
+
   }
 }
 }
