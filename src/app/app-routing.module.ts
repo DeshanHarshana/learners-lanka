@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'first-page',
+    redirectTo: 'signlist',
     pathMatch: 'full'
   },
   {
@@ -86,6 +86,14 @@ const routes: Routes = [
   {
     path: 'paperlist',
     loadChildren: () => import('./pages/paperlist/paperlist.module').then( m => m.PaperlistPageModule)
+  },
+  {
+    path: 'signlist',
+    loadChildren: () => import('./pages/signlist/signlist.module').then( m => m.SignlistPageModule)
+  },
+  {
+    path: 'policeandrider',
+    loadChildren: () => import('./pages/policeandrider/policeandrider.module').then( m => m.PoliceandriderPageModule)
   },
 ];
 

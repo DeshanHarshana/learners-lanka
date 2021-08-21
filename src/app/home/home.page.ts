@@ -12,9 +12,12 @@ export class HomePage {
     private router:Router
   ) {}
   goToOne(){
-    this.router.navigate(['roadsign']);
+    this.router.navigate(['signlist']);
   }
   paperList(){
     this.router.navigate(['paperlist'])
+  }
+  gotoSignlist(){
+
   }
 }

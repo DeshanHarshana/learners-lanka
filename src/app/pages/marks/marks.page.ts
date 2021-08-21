@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Sounds } from 'src/app/common/sounds';
 
 @Component({
@@ -13,7 +14,9 @@ export class MarksPage implements OnInit {
   timer:any
   private correctAnswer=new Audio(String(Sounds.finish));
 
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
   ngOnInit(
 
@@ -31,5 +34,7 @@ export class MarksPage implements OnInit {
 
     },20)
   }
-
+  mainPage(){
+    this.router.navigate(['home']);
+  }
 }

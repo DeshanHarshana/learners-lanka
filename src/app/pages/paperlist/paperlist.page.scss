@@ -22,20 +22,56 @@ h1{
 }
 
 .x{
-  --background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.7)),
+  --background: linear-gradient(0deg, rgba(236, 97, 97, 0.3), rgba(255, 255, 255, 0.7)),
   url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
 
   animation-duration: 500ms;
   animation-delay: 100ms;
 }
 .y{
-  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.7)),
+  --background: linear-gradient(0deg, rgba(94, 240, 245, 0.3), rgba(255, 255, 255, 0.7)),
   url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
   animation-duration: 500ms;
   animation-delay: 400ms;
 }
 .z{
-  --background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.7)),
+  --background: linear-gradient(0deg, rgba(96, 248, 96, 0.3), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}
+.a{
+  --background: linear-gradient(0deg, rgba(106, 204, 243, 0.3), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}
+.b{
+  --background: linear-gradient(0deg, rgba(133, 103, 243, 0.3), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}
+.c{
+  --background: linear-gradient(0deg, rgba(231, 240, 110, 0.3), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}
+.d{
+  --background: linear-gradient(0deg, rgba(135, 240, 175, 0.3), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}
+.e{
+  --background: linear-gradient(0deg, rgba(208, 115, 236, 0.3), rgba(255, 255, 255, 0.7)),
+  url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
+  animation-duration: 500ms;
+  animation-delay: 600ms;
+}
+.f{
+  --background: linear-gradient(0deg, rgba(113, 245, 108, 0.3), rgba(255, 255, 255, 0.7)),
   url("/assets/paperlist/paper.jpg") no-repeat center center / cover;
   animation-duration: 500ms;
   animation-delay: 600ms;
